@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Dreams Hotel | Where Imagination Meets Luxury</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Effects -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Floating Particles -->
+    <div class="particles-container"></div>
+    
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo animate__animated animate__fadeIn">Celestial<span>Dreams</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                    <li><a href="#amenities" class="nav-link">Amenities</a></li>
+                    <li><a href="#dining" class="nav-link">Dining</a></li>
+                    <li><a href="#spa" class="nav-link">Spa</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary btn-magnetic">Book Now</button>
+                    <button id="theme-toggle" class="theme-toggle btn-magnetic">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger btn-magnetic">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="floating-elements">
+            <div class="floating-element el-1"></div>
+            <div class="floating-element el-2"></div>
+            <div class="floating-element el-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Where <span class="text-gradient">Imagination</span> Meets Luxury</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1-5s">Step into a world of wonder at Celestial Dreams Hotel - your gateway to extraordinary experiences</p>
+                <div class="booking-widget animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="booking-tabs">
+                        <button class="tab-btn active btn-magnetic">Rooms</button>
+                        <button class="tab-btn btn-magnetic">Dining</button>
+                        <button class="tab-btn btn-magnetic">Spa</button>
+                    </div>
+                    <form class="booking-form">
+                        <div class="form-group">
+                            <label for="check-in">Check In</label>
+                            <input type="date" id="check-in">
+                        </div>
+                        <div class="form-group">
+                            <label for="check-out">Check Out</label>
+                            <input type="date" id="check-out">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <select id="guests">
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="4+">4+ Guests</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-magnetic">Check Availability</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate-on-scroll">Our <span class="text-gradient">Dreamy</span> Retreats</h2>
+                <p class="animate-on-scroll">Each space crafted to transport you to a world of wonder and comfort</p>
+            </div>
+            <div class="room-filters">
+                <button class="filter-btn active btn-magnetic" data-filter="all">All Rooms</button>
+                <button class="filter-btn btn-magnetic" data-filter="celestial">Celestial</button>
+                <button class="filter-btn btn-magnetic" data-filter="stellar">Stellar</button>
+                <button class="filter-btn btn-magnetic" data-filter="galactic">Galactic</button>
+            </div>
+            <div class="rooms-grid">
+                <!-- Celestial Room -->
+                <div class="room-card" data-type="celestial">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1582719471381-3d6e57313a1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Celestial Room" class="parallax-image">
+                    </div>
+                    <div class="room-info">
+                        <h3>Celestial Room</h3>
+                        <div class="room-price">
+                            <span>$349</span>
+                            <span>$299/night</span>
+                        </div>
+                        <div class="room-features">
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>40 m²</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-user-friends"></i>
+                                <span>2 Adults</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-binoculars"></i>
+                                <span>City View</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>King Bed</span>
+                            </div>
+                        </div>
+                        <div class="room-special-features">
+                            <span><i class="fas fa-star"></i> Starry ceiling projection</span>
+                            <span><i class="fas fa-star"></i> Smart room controls</span>
+                            <span><i class="fas fa-star"></i> Aromatherapy system</span>
+                        </div>
+                        <button class="btn btn-primary btn-magnetic">Book Now</button>
+                    </div>
+                </div>
+                
+                <!-- Galactic Suite -->
+                <div class="room-card" data-type="galactic">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1566669437685-50e6e65d6d2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Galactic Suite" class="parallax-image">
+                    </div>
+                    <div class="room-info">
+                        <h3>Galactic Suite</h3>
+                        <div class="room-price">
+                            <span>$599</span>
+                            <span>$499/night</span>
+                        </div>
+                        <div class="room-features">
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>75 m²</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-user-friends"></i>
+                                <span>2 Adults + 1 Child</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-binoculars"></i>
+                                <span>Ocean View</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>King Bed + Sofa</span>
+                            </div>
+                        </div>
+                        <div class="room-special-features">
+                            <span><i class="fas fa-star"></i> Interactive walls</span>
+                            <span><i class="fas fa-star"></i> Private balcony</span>
+                            <span><i class="fas fa-star"></i> Personal concierge</span>
+                        </div>
+                        <button class="btn btn-primary btn-magnetic">Book Now</button>
+                    </div>
+                </div>
+                
+                <!-- Stellar Room -->
+                <div class="room-card" data-type="stellar">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049307260-da4ec1d42249?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Stellar Room" class="parallax-image">
+                    </div>
+                    <div class="room-info">
+                        <h3>Stellar Room</h3>
+                        <div class="room-price">
+                            <span>$249</span>
+                            <span>$199/night</span>
+                        </div>
+                        <div class="room-features">
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>35 m²</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-user-friends"></i>
+                                <span>2 Adults</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-binoculars"></i>
+                                <span>Garden View</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>Queen Bed</span>
+                            </div>
+                        </div>
+                        <div class="room-special-features">
+                            <span><i class="fas fa-star"></i> Mood lighting</span>
+                            <span><i class="fas fa-star"></i> Premium sound system</span>
+                            <span><i class="fas fa-star"></i> Luxury bath products</span>
+                        </div>
+                        <button class="btn btn-primary btn-magnetic">Book Now</button>
+                    </div>
+                </div>
+                
+                <!-- Nebula Penthouse -->
+                <div class="room-card" data-type="galactic">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nebula Penthouse" class="parallax-image">
+                    </div>
+                    <div class="room-info">
+                        <h3>Nebula Penthouse</h3>
+                        <div class="room-price">
+                            <span>$999</span>
+                            <span>$799/night</span>
+                        </div>
+                        <div class="room-features">
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>120 m²</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-user-friends"></i>
+                                <span>2 Adults + 2 Children</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-binoculars"></i>
+                                <span>Panoramic City View</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>King Bed + Living Area</span>
+                            </div>
+                        </div>
+                        <div class="room-special-features">
+                            <span><i class="fas fa-star"></i> Private rooftop terrace</span>
+                            <span><i class="fas fa-star"></i> Personal butler</span>
+                            <span><i class="fas fa-star"></i> Home theater</span>
+                        </div>
+                        <button class="btn btn-primary btn-magnetic">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-pattern"></div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate-on-scroll">Magical <span class="text-gradient">Amenities</span></h2>
+                <p class="animate-on-scroll">Discover facilities that elevate your stay into an extraordinary experience</p>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-card animate-on-scroll">
+                    <div class="amenity-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Infinity Pool</h3>
+                    <p>Stunning rooftop pool with panoramic city views under the stars</p>
+                    <div class="amenity-hover-effect"></div>
+                </div>
+                <div class="amenity-card animate-on-scroll">
+                    <div class="amenity-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Rejuvenate with our signature celestial-inspired treatments</p>
+                    <div class="amenity-hover-effect"></div>
+                </div>
+                <div class="amenity-card animate-on-scroll">
+                    <div class="amenity-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness Center</h3>
+                    <p>State-of-the-art equipment with virtual reality workouts</p>
+                    <div class="amenity-hover-effect"></div>
+                </div>
+                <div class="amenity-card animate-on-scroll">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Quantum WiFi</h3>
+                    <p>Lightning-fast internet throughout the hotel</p>
+                    <div class="amenity-hover-effect"></div>
+                </div>
+                <div class="amenity-card animate-on-scroll">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Gourmet Dining</h3>
+                    <p>Multiple restaurants with immersive culinary experiences</p>
+                    <div class="amenity-hover-effect"></div>
+                </div>
+                <div class="amenity-card animate-on-scroll">
+                    <div class="amenity-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Wonder Room</h3>
+                    <p>Interactive digital art and light installations</p>
+                    <div class="amenity-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="dining section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate-on-scroll">Cosmic <span class="text-gradient">Culinary</span> Journeys</h2>
+                <p class="animate-on-scroll">Savor exquisite creations from our constellation of chefs</p>
+            </div>
+            <div class="restaurant-tabs">
+                <button class="restaurant-tab active btn-magnetic" data-restaurant="main">Nebula Dining</button>
+                <button class="restaurant-tab btn-magnetic" data-restaurant="rooftop">Aurora Lounge</button>
+                <button class="restaurant-tab btn-magnetic" data-restaurant="lobby">Starlight Bar</button>
+            </div>
+            <div class="restaurant-content active" id="main-restaurant">
+                <div class="restaurant-info">
+                    <h3>Nebula Dining</h3>
+                    <p>Our signature dining venue offering an immersive culinary experience with projection-mapped tables that transform as you dine. The menu features molecular gastronomy paired with celestial themes.</p>
+                    <div class="restaurant-details">
+                        <p><strong>Hours:</strong> 6:30 AM - 10:30 PM</p>
+                        <p><strong>Experience:</strong> Projection-mapped dining</p>
+                        <p><strong>Signature Dish:</strong> Galactic Lobster with stardust sauce</p>
+                    </div>
+                    <button class="btn btn-primary btn-magnetic">Reserve a Table</button>
+                </div>
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nebula Restaurant" class="parallax-image">
+                </div>
+            </div>
+            <div class="restaurant-content" id="rooftop-restaurant">
+                <div class="restaurant-info">
+                    <h3>Aurora Lounge</h3>
+                    <p>Our rooftop lounge offers breathtaking views with a menu inspired by the Northern Lights. Enjoy craft cocktails that change color and temperature, paired with small plates designed to delight all senses.</p>
+                    <div class="restaurant-details">
+                        <p><strong>Hours:</strong> 4:00 PM - 2:00 AM</p>
+                        <p><strong>Experience:</strong> Color-changing cocktails</p>
+                        <p><strong>Signature Drink:</strong> Aurora Martini with edible glitter</p>
+                    </div>
+                    <button class="btn btn-primary btn-magnetic">Reserve a Table</button>
+                </div>
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Aurora Lounge" class="parallax-image">
+                </div>
+            </div>
+            <div class="restaurant-content" id="lobby-restaurant">
+                <div class="restaurant-info">
+                    <h3>Starlight Bar</h3>
+                    <p>The heart of our hotel features a celestial-inspired bar with a starry ceiling that mimics the night sky. Enjoy artisanal cocktails and light bites in this enchanting atmosphere.</p>
+                    <div class="restaurant-details">
+                        <p><strong>Hours:</strong> 11:00 AM - 12:00 AM</p>
+                        <p><strong>Experience:</strong> Interactive star projection</p>
+                        <p><strong>Signature Drink:</strong> Milky Way Old Fashioned</p>
+                    </div>
+                    <button class="btn btn-primary btn-magnetic">Reserve a Table</button>
+                </div>
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Starlight Bar" class="parallax-image">
+                </div>
+            </div>
+        </div>
+        <div class="dining-particles"></div>
+    </section>
+
+    <!-- Spa Section -->
+    <section id="spa" class="spa section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate-on-scroll">Celestial <span class="text-gradient">Spa</span> Sanctuary</h2>
+                <p class="animate-on-scroll">Rejuvenate your mind, body, and soul with our cosmic-inspired treatments</p>
+            </div>
+            <div class="spa-packages">
+                <div class="package-card animate-on-scroll">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Signature Massage" class="parallax-image">
+                    </div>
+                    <div class="package-info">
+                        <h3>Milky Way Massage</h3>
+                        <p>90 minutes of pure relaxation with our exclusive essential oil blend under a constellation-projected ceiling</p>
+                        <div class="package-price">
+                            <span>$150</span>
+                            <button class="btn btn-secondary btn-magnetic">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="package-glow"></div>
+                </div>
+                <div class="package-card animate-on-scroll">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Facial Treatment" class="parallax-image">
+                    </div>
+                    <div class="package-info">
+                        <h3>Starlight Facial</h3>
+                        <p>LED light therapy combined with gold-infused products for radiant, youthful skin</p>
+                        <div class="package-price">
+                            <span>$120</span>
+                            <button class="btn btn-secondary btn-magnetic">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="package-glow"></div>
+                </div>
+                <div class="package-card animate-on-scroll">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1562325951-f8aeb1aad4f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Full Day Retreat" class="parallax-image">
+                    </div>
+                    <div class="package-info">
+                        <h3>Cosmic Retreat</h3>
+                        <p>Full day experience including massage, facial, floating meditation, and gourmet spa lunch</p>
+                        <div class="package-price">
+                            <span>$300</span>
+                            <button class="btn btn-secondary btn-magnetic">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="package-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="animate-on-scroll">Guest <span class="text-gradient">Experiences</span></h2>
+                <p class="animate-on-scroll">What our guests say about their celestial journey with us</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The attention to detail at Celestial Dreams is otherworldly. From the moment we arrived, every need was anticipated and met with stellar service. The virtual reality room tour was mind-blowing!"</p>
+                        <div class="guest-info">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <span>New York, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The spa treatments were absolutely divine - literally felt like floating among the stars! The constellation projection during our massage was magical. We'll definitely be returning next year."</p>
+                        <div class="guest-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <span>Toronto, Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The Galactic Suite exceeded all our expectations. The interactive walls that changed with our mood, the zero-gravity sleep experience, and the meteor shower light show were unforgettable!"</p>
+                        <div class="guest-info">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez">
+                            <div>
+                                <h4>Emily Rodriguez</h4>
+                                <span>Miami, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev btn-magnetic"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next btn-magnetic"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-pattern"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <h2>Contact Us</h2>
+                    <p>Have questions or special requests? We'd love to hear from you.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Stellar Avenue, Miami, FL 33139</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (305) 555-0123</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>dreams@celestialhotel.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="btn-magnetic"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-magnetic"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-magnetic"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-magnetic"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form animate-on-scroll">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option value="booking">Room Booking</option>
+                                <option value="dining">Restaurant Reservation</option>
+                                <option value="spa">Spa Appointment</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-magnetic">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925916665!2d-80.29949920266738!3d25.782390733064336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL%2C%20USA!5e0!3m2!1sen!2s!4v1684323456789!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Celestial<span>Dreams</span></h3>
+                    <p>Where every stay becomes a cherished memory. Experience unparalleled luxury and service at our award-winning hotel.</p>
+                    <div class="footer-social">
+                        <a href="#" class="btn-magnetic"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-magnetic"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-magnetic"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-magnetic"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#rooms" class="footer-link">Rooms & Suites</a></li>
+                        <li><a href="#dining" class="footer-link">Dining</a></li>
+                        <li><a href="#spa" class="footer-link">Spa & Wellness</a></li>
+                        <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Stellar Ave, Miami, FL</li>
+                        <li><i class="fas fa-phone-alt"></i> +1 (305) 555-0123</li>
+                        <li><i class="fas fa-envelope"></i> dreams@celestialhotel.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Stellar Newsletter</h4>
+                    <p>Subscribe for cosmic offers and celestial updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn-magnetic"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Celestial Dreams Hotel. All Rights Reserved.</p>
+                <p>Created with <i class="fas fa-heart pulse"></i> by <strong>iscode</strong></p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
