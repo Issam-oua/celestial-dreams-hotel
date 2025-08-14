@@ -30,4 +30,4 @@ A luxurious hotel website with cosmic theme featuring smooth animations, dark/li
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/celestial-dreams-hotel.git
+   git clone https://github.com/Issam-oua/celestial-dreams-hotel.git
